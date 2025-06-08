@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Run Music Game - Create Your Own Beats Online | RunGoGo</title>
+    <meta name="description" content="Create amazing music with Run! Choose from cartoon instruments, combine sounds, and generate personalized beats. Free online music creation game for all ages.">
+    <meta name="keywords" content="run music game, online music maker, cartoon instruments, beat creator, music composition, web music game, sound creation">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://rungogo.cv/">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Run Music Game - Create Your Own Beats Online">
+    <meta property="og:description" content="Create amazing music with Run! Choose from cartoon instruments, combine sounds, and generate personalized beats.">
+    <meta property="og:url" content="https://rungogo.cv/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="RunGoGo">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Run Music Game - Create Your Own Beats Online">
+    <meta name="twitter:description" content="Create amazing music with Run! Choose from cartoon instruments, combine sounds, and generate personalized beats.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'apple-blue': '#007AFF',
+                        'apple-gray': '#8E8E93',
+                        'apple-light-gray': '#F2F2F7',
+                        'apple-dark': '#1D1D1F',
+                        'apple-green': '#34C759',
+                        'apple-orange': '#FF9500',
+                        'apple-purple': '#5856D6',
+                        'apple-pink': '#FF2D92'
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        .game-container {
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            overflow: hidden;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #FF2D92, #5856D6, #007AFF);
+        }
+        
+        .text-gradient {
+            background: linear-gradient(135deg, #FF2D92, #5856D6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .music-gradient {
+            background: linear-gradient(135deg, #FF9500, #FF2D92, #5856D6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .feature-card {
+            transition: transform 0.2s ease-in-out;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-2px);
+        }
+        
+        @media (max-width: 768px) {
+            .game-iframe {
+                height: 400px !important;
+            }
+        }
+        
+        .pulse-animation {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+    </style>
+</head>
+
+<body class="bg-apple-light-gray min-h-screen">
+    <!-- Header -->
+    <header class="bg-white shadow-sm border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <h1 class="text-2xl font-bold text-gradient">🎵 RunGoGo</h1>
+                </div>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#game" class="text-apple-gray hover:text-apple-blue transition-colors">Play Game</a>
+                    <a href="#about" class="text-apple-gray hover:text-apple-blue transition-colors">About</a>
+                    <a href="#features" class="text-apple-gray hover:text-apple-blue transition-colors">Features</a>
+                    <a href="#how-to-play" class="text-apple-gray hover:text-apple-blue transition-colors">How to Play</a>
+                </nav>
+                <button class="md:hidden text-apple-gray">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <!-- Hero Section -->
+        <section class="text-center mb-12">
+            <h1 class="text-4xl md:text-6xl font-bold text-apple-dark mb-4">
+                Create Music with <span class="music-gradient">Run Game</span>
+            </h1>
+            <p class="text-xl text-apple-gray max-w-3xl mx-auto mb-8">
+                Unleash your creativity with cartoon instruments! Choose, combine, and create personalized beats and melodies in this fun, interactive music creation game.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#game" class="inline-block bg-apple-blue text-white px-8 py-3 rounded-full font-semibold hover:bg-blue-600 transition-colors pulse-animation">
+                    🎶 Start Creating Music
+                </a>
+                <a href="#how-to-play" class="inline-block border-2 border-apple-blue text-apple-blue px-8 py-3 rounded-full font-semibold hover:bg-apple-blue hover:text-white transition-colors">
+                    Learn How to Play
+                </a>
+            </div>
+        </section>
+
+        <!-- Game Section -->
+        <section id="game" class="mb-12">
+            <h2 class="text-3xl font-bold text-center text-apple-dark mb-8">🎵 Play Run Music Game</h2>
+            <div class="game-container bg-white p-4 max-w-4xl mx-auto">
+                <iframe 
+                    src="https://html-classic.itch.zone/html/11407110/index.html?v=1730332583"
+                    class="w-full h-96 md:h-[600px] game-iframe border-0"
+                    title="Run Music Game - Online Music Creation Game"
+                    loading="lazy"
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <p class="text-center text-apple-gray mt-4 text-sm">
+                Click on instruments to create music. Compatible with all modern browsers and touch devices.
+            </p>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="mb-12">
+            <div class="bg-white rounded-xl p-8 shadow-sm">
+                <h2 class="text-3xl font-bold text-apple-dark mb-6">🎼 About Run Music Game</h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-xl font-semibold text-apple-dark mb-4">Musical Creativity Unleashed</h3>
+                        <p class="text-apple-gray leading-relaxed mb-4">
+                            Run is an innovative music creation game that transforms anyone into a composer! With its colorful cartoon-style interface, players can select from a variety of animated instruments to build their own unique soundtracks and beats.
+                        </p>
+                        <p class="text-apple-gray leading-relaxed">
+                            Whether you're a music enthusiast or a complete beginner, Run makes music creation accessible, fun, and engaging through its intuitive drag-and-drop interface and real-time audio feedback.
+                        </p>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-apple-dark mb-4">Interactive Music Making</h3>
+                        <p class="text-apple-gray leading-relaxed mb-4">
+                            The game features a collection of cartoon instruments including drums, keyboards, guitars, and unique sound effects. Each instrument responds to your interactions with delightful animations and high-quality audio samples.
+                        </p>
+                        <p class="text-apple-gray leading-relaxed">
+                            Create layered compositions by combining multiple instruments, experiment with different rhythms, and discover your own musical style in this creative playground.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="mb-12">
+            <h2 class="text-3xl font-bold text-center text-apple-dark mb-8">🌟 Game Features</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="feature-card bg-white rounded-xl p-6 shadow-sm text-center">
+                    <div class="text-4xl mb-4">🥁</div>
+                    <h3 class="text-xl font-semibold text-apple-dark mb-3">Cartoon Instruments</h3>
+                    <p class="text-apple-gray">Choose from a variety of animated instruments, each with unique sounds and visual effects that respond to your creativity.</p>
+                </div>
+                
+                <div class="feature-card bg-white rounded-xl p-6 shadow-sm text-center">
+                    <div class="text-4xl mb-4">🎨</div>
+                    <h3 class="text-xl font-semibold text-apple-dark mb-3">Easy Creation</h3>
+                    <p class="text-apple-gray">Intuitive interface makes music creation simple and fun for users of all ages and musical backgrounds.</p>
+                </div>
+                
+                <div class="feature-card bg-white rounded-xl p-6 shadow-sm text-center">
+                    <div class="text-4xl mb-4">🎵
